@@ -56,3 +56,191 @@
     color: var(--color-secondary);
     line-height: 1.6;
 }
+
+
+
+/* Main Content Styles */
+.main-content {
+    padding: 2rem 0;
+    background-color: #f9f9f9;
+    min-height: 70vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* College Info Styles */
+.college-info h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-size: 2.2rem;
+}
+
+.address {
+    text-align: center;
+    color: #7f8c8d;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* Dean Profile Styles */
+.dean-profile {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.dean-photo {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.dean-img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    aspect-ratio: 3/4;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.photo-caption {
+    margin-top: 1rem;
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 1.1rem;
+}
+
+.dean-details {
+    flex: 2;
+    min-width: 300px;
+}
+
+.dean-details h2 {
+    color: #3498db;
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+}
+
+.dean-details h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.dob {
+    color: #7f8c8d;
+    margin-bottom: 1.5rem;
+}
+
+/* Qualification Table Styles */
+.qualification h3 {
+    color: #3498db;
+    margin: 1.5rem 0 1rem;
+    font-size: 1.3rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e0e0e0;
+    vertical-align: top;
+}
+
+table td:first-child {
+    width: 30%;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+/* Contact Info Styles */
+.contact-info {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.contact-info h2 {
+    color: #3498db;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.contact-details p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+    font-size: 1.1rem;
+}
+
+.contact-details i {
+    color: #3498db;
+    width: 20px;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .college-info h1 {
+        font-size: 1.8rem;
+    }
+    
+    .dean-profile {
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+    
+    .dean-photo, .dean-details {
+        min-width: 100%;
+    }
+    
+    table td:first-child {
+        width: 40%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .college-info h1 {
+        font-size: 1.5rem;
+    }
+    
+    .dean-details h2, .contact-info h2 {
+        font-size: 1.5rem;
+    }
+    
+    table td {
+        display: block;
+        width: 100% !important;
+        padding: 8px 0;
+        border-bottom: none;
+    }
+    
+    table tr {
+        border-bottom: 1px solid #e0e0e0;
+        padding: 10px 0;
+    }
+}
