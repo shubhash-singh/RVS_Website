@@ -1,0 +1,165 @@
+/* Footer CSS */
+.footer {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+/* Footer Top */
+.footer-top {
+    padding: var(--space-8) 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-top .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.welcome-message {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-medium);
+}
+
+.cta-buttons {
+    display: flex;
+    gap: var(--space-4);
+}
+
+/* Footer Main */
+.footer-main {
+    padding: var(--space-12) 0;
+}
+
+.footer-main .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-info {
+    max-width: 400px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--space-6);
+}
+
+.footer-logo img {
+    height: 50px;
+    margin-right: var(--space-2);
+}
+
+.footer-logo span {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+}
+
+.college-info h3 {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: var(--space-4);
+}
+
+.college-info address {
+    font-style: normal;
+    margin-bottom: var(--space-4);
+    line-height: 1.6;
+}
+
+.college-info .phone {
+    margin-bottom: var(--space-2);
+}
+
+.college-info .email {
+    display: block;
+    margin-bottom: var(--space-6);
+    transition: opacity var(--transition-normal);
+}
+
+.college-info .email:hover {
+    opacity: 0.8;
+}
+
+.directions-btn {
+    display: inline-block;
+    padding: var(--space-2) var(--space-6);
+    border: 1px solid var(--color-white);
+    border-radius: var(--radius-full);
+    transition: all var(--transition-normal);
+}
+
+.directions-btn:hover {
+    background-color: var(--color-white);
+    color: var(--color-primary);
+}
+
+.footer-links {
+    display: flex;
+    gap: var(--space-16);
+}
+
+.footer-link-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-link-group a {
+    margin-bottom: var(--space-4);
+    transition: opacity var(--transition-normal);
+}
+
+.footer-link-group a:hover {
+    opacity: 0.8;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    padding: var(--space-6) 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-links {
+    display: flex;
+    gap: var(--space-4);
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    transition: opacity var(--transition-normal);
+}
+
+.social-link:hover {
+    opacity: 0.8;
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--color-white);
+}
+
+.copyright {
+    font-size: var(--font-size-sm);
+    opacity: 0.8;
+}
+
+.wordpress-link {
+    text-decoration: underline;
+    transition: opacity var(--transition-normal);
+}
+
+.wordpress-link:hover {
+    opacity: 0.8;
+}
