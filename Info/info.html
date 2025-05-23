@@ -4,15 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RVS Medical College and Hospital</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/variables.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/hero.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/responsive.css">
+    <title>Dean & MS - RVS Medical College and Hospital</title>
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/variables.css">
+    <link rel="stylesheet" href="./CSS/affiliated.css">
+    <link rel="stylesheet" href="./CSS/staffs.css">
+    <link rel="stylesheet" href="./CSS/header.css">
+    <link rel="stylesheet" href="./CSS/hero.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
+    <link rel="stylesheet" href="./CSS/responsive.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
@@ -38,7 +41,7 @@
                         <li class="nav-item dropdown">
                             <a href="#" class="nav-link">Info Under MSR B.1.1 <span class="dropdown-arrow">▾</span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="/Info/info.html">Affiliated University</a></li>
+                                <li><a href="#">Affiliated University</a></li>
                                 <li><a href="#">Teaching & Non Teaching Staff</a></li>
                                 <li><a href="#">Committees</a></li>
                                 <li><a href="#">Fees</a></li>
@@ -49,7 +52,6 @@
                             <a href="#" class="nav-link">Academics <span class="dropdown-arrow">▾</span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="/Gallery/gallery.html">Gallery</a></li>
-
                             </ul>
                         </li>
                     </ul>
@@ -63,43 +65,51 @@
         </div>
     </header>
 
-    <section class="hero">
-        <div class="hero-slideshow">
-            <div class="slide active" style="background-image: url('../../Images/RVS1.JPG')"></div>
-            <div class="slide" style="background-image: url('../../Images/RVS2.JPG')"></div>
-            <div class="slide" style="background-image: url('../../Images/RVS3.JPG')"></div>
-            <div class="slide" style="background-image: url('../../Images/RVS4.JPG')"></div>
 
-        </div>
-
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1>
-                <span>RVS</span>
-                <span>Medical College</span>
-                <span>and Hospital</span>
-            </h1>
-        </div>
-
-        <div class="explore-container">
-            <a href="#welcome" class="explore-link">
-                Explore
-                <span class="arrow-down">↓</span>
-            </a>
-        </div>
-    </section>
-
-
-    <section id="welcome" class="welcome">
+    <section class="affiliation-section">
         <div class="container">
-            <h2>Welcome to RVS Medical College and Hospital</h2>
-            <p>
-                RVS Medical College and Hospital is committed to excellence in medical education,
-                patient care, and research. Our modern facilities, experienced faculty, and dedication to
-                the highest standards of medical practice make us a leading institution in the region.
-            </p>
+            <h2>Affiliation</h2>
+            <p>RVS Medical College and Hospital is affiliated with the prestigious Dr. NTR University of Health Sciences, Vijayawada, Andhra Pradesh.</p>
+            <div class="affiliation-details">
+                <h3>Affiliating University</h3>
+                <p>Dr. NTR University of Health Sciences</p>
+                <h3>Affiliation Date</h3>
+                <p>2019</p>
+                <h3>Affiliation Status</h3>
+                <p>Permanent</p>
+            </div>
+            <div class="affiliation-image">
+                <img src="./assets/affiliation-image.jpg" alt="Affiliation Image">
+            </div>
         </div>
     </section>
+
+
+    <section class="staff-section">
+        <div class="container">
+            <h2>Teaching and Non-Teaching Staff</h2>
+            <p>Our esteemed faculty and dedicated non-teaching staff are the backbone of RVS Medical College and Hospital.</p>
+            <div class="staff-list">
+                <div class="card staff-member">
+                    <img src="/Images/Sample_profile_pic.jpg" alt="Staff Member 1">
+                    <h3>Dr. John Doe</h3>
+                    <p>Professor of Medicine</p>
+                </div>
+                <div class="card staff-member">
+                    <img src="/Images/Sample_profile_pic.jpg" alt="Staff Member 2">
+                    <h3>Ms. Jane Smith</h3>
+                    <p>Assistant Professor of Surgery</p>
+                </div>
+                <div class="card staff-member">
+                    <img src="/Images/Sample_profile_pic.jpg" alt="Staff Member 3">
+                    <h3>Mr. Michael Johnson</h3>
+                    <p>Administrative Officer</p>
+                </div>
+                <!-- Add more staff members as needed -->
+            </div>
+        </div>
+    </section>
+
 
     <footer class="footer">
         <div class="footer-top">
@@ -120,7 +130,7 @@
                 <div class="footer-info">
                     <div class="footer-logo">
                         <img src="./assets/logo.svg" alt="RVS Logo">
-                        <span>RVS</span>
+                        <span>AGMCH</span>
                     </div>
                     <div class="college-info">
                         <h3>RVS Medical College and Hospital</h3>

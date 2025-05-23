@@ -1,0 +1,62 @@
+/* Main CSS */
+.container {
+    width: 100%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+    
+    padding: 0 var(--space-4);
+}
+
+
+/* Affiliated Section Styles */
+.affiliation-section {
+    padding: var(--space-16) 0;
+    background-color: var(--color-gray-100);
+    text-align: center;
+}
+
+.affiliation-section h2 {
+    font-size: var(--font-size-3xl);
+    margin-bottom: var(--space-6);
+    color: var(--color-primary);
+}
+
+.affiliation-section p {
+    font-size: var(--font-size-lg);
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--color-gray-800);
+    line-height: 1.6;
+}
+
+.affiliation-section .affiliation-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-4);
+}
+
+.affiliation-section .affiliation-details h3 {
+    font-size: var(--font-size-xl);
+    color: var(--color-primary-dark);
+}
+
+.affiliation-section .affiliation-details p {
+    font-size: var(--font-size-base);
+    color: var(--color-gray-700);
+}
+
+
+/* Staff */
+
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.card {
+    animation: fadeIn 0.5s ease-out;
+}
+
