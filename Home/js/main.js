@@ -37,3 +37,30 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+//Image slider
+
+document.addEventListener('DOMContentLoaded', function() {
+    const slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+    const slideInterval = 4000; 
+    
+    function nextSlide() {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add('active');
+    }
+    
+    // Start slideshow
+    let slideShow = setInterval(nextSlide, slideInterval);
+    
+    // // Pause on hover (optional)
+    // const hero = document.querySelector('.hero');
+    // hero.addEventListener('mouseenter', () => {
+    //     clearInterval(slideShow);
+    // });
+    
+    // hero.addEventListener('mouseleave', () => {
+    //     slideShow = setInterval(nextSlide, slideInterval);
+    // });
+});
