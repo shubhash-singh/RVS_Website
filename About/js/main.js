@@ -43,7 +43,7 @@ const adminData = [
     {
         title: "DEAN",
         name: "Dr. [Dean Name]",
-        photo: "../../Images/hospital_home_Image.jpg", // Add path to dean's photo
+        photo: "../../Images/hospital_home_Image.jpg", 
         dob: "DOB: [Date of Birth]",
         qualifications: [
             {
@@ -64,7 +64,7 @@ const adminData = [
     {
         title: "MEDICAL SUPERINTENDENT",
         name: "Dr. Ravi Kumarvel",
-        photo: "../../Images/hospital_home_Image.jpg", // Add path to MS's photo
+        photo: "../../Images/hospital_home_Image.jpg", 
         dob: "DOB: 01-07-1971",
         qualifications: [
             {

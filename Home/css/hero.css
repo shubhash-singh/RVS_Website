@@ -3,7 +3,6 @@
     position: relative;
     height: 100vh;
     min-height: 600px;
-    background-image: url('../../Images/hospital_home_Image.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -12,6 +11,46 @@
     text-align: center;
     color: var(--color-white);
     overflow: hidden;
+}
+
+.hero-slideshow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    will-change: opacity;
+    
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+/* Add these to make transitions smoother */
+.slide {
+    transition: opacity 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: #000; /* Fallback if image doesn't load */
+}
+
+/* Add fade-in effect when page loads */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.hero-slideshow {
+    animation: fadeIn 1s ease-out;
 }
 
 .hero-overlay {
