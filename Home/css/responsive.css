@@ -41,7 +41,7 @@
     :root {
         --header-height: 70px;
     }
-    
+        
     .container {
         max-width: 540px;
     }
@@ -154,6 +154,8 @@
     .btn {
         width: 200px;
     }
+
+    
 }
 
 /* Mobile Small */
